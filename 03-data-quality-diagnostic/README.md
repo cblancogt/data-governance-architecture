@@ -1,4 +1,4 @@
-# 03: Architectural Diagnostic & DBA Performance Analysis
+# 03: Architectural Data Quality Diagnostic
 
 **Project:** P02 - Data Governance Architecture  
 **Repository:** `data-governance-architecture/03-data-quality-diagnostic/`  
@@ -139,7 +139,8 @@ This diagnostic gives the company its first quantified view of data fragmentatio
 | `02_fragmented_drivers.sql` | 3-table driver identity analysis + INCIDENTE traceability chain |
 | `03_orphan_records.sql` | Type A/B/C orphan records + duplicate invoices |
 | `04_telemetry_gaps.sql` | Ghost vehicles, dark windows, assignment gap analysis |
-| `README.md` | - | This file |
+| `05_business_impact.sql` | Financial exposure quantification per governance failure |
+| `README.md` | This file |
 
 ---
 <div align="center">

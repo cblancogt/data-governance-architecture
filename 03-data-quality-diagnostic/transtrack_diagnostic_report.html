@@ -1,0 +1,139 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:2rem 2rem 1.5rem;font-family:var(--font-sans)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1.5px solid var(--color-text-primary);margin-bottom:1.5rem}
+.top-left{}
+.proj{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:6px}
+.main-title{font-size:20px;font-weight:500;color:var(--color-text-primary);line-height:1.2}
+.top-right{text-align:right}
+.tag{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-tertiary)}
+.week{font-size:13px;font-weight:500;color:var(--color-text-secondary);margin-top:4px}
+.section-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:10px}
+.total-row{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);margin-bottom:1.5rem}
+.total-num{font-size:32px;font-weight:500;color:var(--color-text-primary);letter-spacing:-0.02em}
+.total-desc{font-size:12px;color:var(--color-text-secondary);margin-top:3px}
+.total-meta{text-align:right;font-size:11px;color:var(--color-text-tertiary);line-height:1.6}
+.findings{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--color-border-tertiary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);overflow:hidden;margin-bottom:1.5rem}
+.finding{background:var(--color-background-primary);padding:1rem 1.25rem}
+.f-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.f-num{font-size:10px;color:var(--color-text-tertiary);letter-spacing:0.08em}
+.pill{font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:2px 7px;border-radius:20px}
+.pill-c{background:#FCEBEB;color:#A32D2D}
+.pill-h{background:#FAEEDA;color:#854F0B}
+.pill-m{background:#EAF3DE;color:#3B6D11}
+.f-label{font-size:12px;color:var(--color-text-secondary);margin-bottom:8px;line-height:1.4}
+.f-value{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:2px}
+.f-sub{font-size:11px;color:var(--color-text-tertiary)}
+.bars{margin-bottom:1.5rem}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.b-label{font-size:11px;color:var(--color-text-secondary);width:170px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b-track{flex:1;height:4px;background:var(--color-background-secondary);border-radius:2px;overflow:hidden}
+.b-fill{height:100%;border-radius:2px;transition:width 0.3s}
+.b-val{font-size:11px;font-weight:500;color:var(--color-text-primary);width:72px;text-align:right;flex-shrink:0}
+.bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;border-top:0.5px solid var(--color-border-tertiary)}
+.author{font-size:11px;color:var(--color-text-tertiary)}
+.author span{color:var(--color-text-secondary);font-weight:500}
+.badges{display:flex;gap:6px}
+.b-badge{font-size:10px;padding:3px 8px;border-radius:20px;letter-spacing:0.04em;font-weight:500}
+</style>
+
+<div class="wrap">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">TRANSTRACK data governance diagnostic — financial exposure summary across 5 risk categories totaling $128.5M USD</h2>
+
+  <div class="top">
+    <div class="top-left">
+      <div class="proj">P02 · Data Governance Architecture · TRANSTRACK</div>
+      <div class="main-title">Governance Gap Analysis<br>Financial Exposure Report</div>
+    </div>
+    <div class="top-right">
+      <div class="tag">Week 03 of 14</div>
+      <div class="week">Diagnostic · No data modified</div>
+    </div>
+  </div>
+
+  <div class="section-label">Consolidated exposure</div>
+  <div class="total-row">
+    <div>
+      <div class="total-num">$128.5M USD</div>
+      <div class="total-desc">Total financial exposure across 5 governance failure categories</div>
+    </div>
+    <div class="total-meta">
+      Accumulated 2019 – 2026<br>
+      500,000 orders · 490,000 invoices<br>
+      8,500 incidents · 15M GPS records
+    </div>
+  </div>
+
+  <div class="section-label">Findings by impact</div>
+  <div class="findings">
+    <div class="finding">
+      <div class="f-top"><span class="f-num">01</span><span class="pill pill-c">Critical</span></div>
+      <div class="f-label">Legal liability — incidents with no traceable driver</div>
+      <div class="f-value">$84.5M</div>
+      <div class="f-sub">5,634 incidents · Ley de Tránsito GT</div>
+    </div>
+    <div class="finding">
+      <div class="f-top"><span class="f-num">02</span><span class="pill pill-m">Medium</span></div>
+      <div class="f-label">Overbilling — same order invoiced twice</div>
+      <div class="f-value">$21.8M</div>
+      <div class="f-sub">3,452 duplicate invoices · avg $35,806 each</div>
+    </div>
+    <div class="finding">
+      <div class="f-top"><span class="f-num">03</span><span class="pill pill-h">High</span></div>
+      <div class="f-label">Credit double-exposure — duplicate client records</div>
+      <div class="f-value">$18.9M</div>
+      <div class="f-sub">13,625 excess records · two unlinked modules</div>
+    </div>
+    <div class="finding">
+      <div class="f-top"><span class="f-num">04</span><span class="pill pill-h">High</span></div>
+      <div class="f-label">SAT audit exposure — invoices with no order</div>
+      <div class="f-value">$2.7M</div>
+      <div class="f-sub">5,000 orphan invoices · Decreto 27-92</div>
+    </div>
+    <div class="finding" style="grid-column:1/-1;border-top:1px solid var(--color-border-tertiary)">
+      <div class="f-top"><span class="f-num">05</span><span class="pill pill-c">Critical</span></div>
+      <div class="f-label">Revenue leakage — delivered orders never invoiced</div>
+      <div class="f-value">$13.7K</div>
+      <div class="f-sub">3 confirmed deliveries · pattern indicates missing reconciliation control · NIIF 15</div>
+    </div>
+  </div>
+
+  <div class="section-label">Relative exposure</div>
+  <div class="bars">
+    <div class="bar-row">
+      <div class="b-label">Legal liability</div>
+      <div class="b-track"><div class="b-fill" style="width:100%;background:#E24B4A"></div></div>
+      <div class="b-val">$84.5M</div>
+    </div>
+    <div class="bar-row">
+      <div class="b-label">Duplicate invoices</div>
+      <div class="b-track"><div class="b-fill" style="width:25.8%;background:#EF9F27"></div></div>
+      <div class="b-val">$21.8M</div>
+    </div>
+    <div class="bar-row">
+      <div class="b-label">Credit double-exposure</div>
+      <div class="b-track"><div class="b-fill" style="width:22.4%;background:#EF9F27"></div></div>
+      <div class="b-val">$18.9M</div>
+    </div>
+    <div class="bar-row">
+      <div class="b-label">SAT fine exposure</div>
+      <div class="b-track"><div class="b-fill" style="width:3.2%;background:#BA7517"></div></div>
+      <div class="b-val">$2.7M</div>
+    </div>
+    <div class="bar-row">
+      <div class="b-label">Revenue leakage</div>
+      <div class="b-track"><div class="b-fill" style="width:0.2%;background:#639922"></div></div>
+      <div class="b-val">$13.7K</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="author"><span>cblancogt</span> · github.com/cblancogt · data-governance-architecture</div>
+    <div class="badges">
+      <span class="b-badge pill-c">2 Critical</span>
+      <span class="b-badge pill-h">2 High</span>
+      <span class="b-badge pill-m">1 Medium</span>
+    </div>
+  </div>
+</div>
