@@ -1,4 +1,4 @@
-# 03: Architectural Data Quality Diagnostic
+# 03: Data Quality Diagnostic
 
 **Project:** P02 - Data Governance Architecture  
 **Repository:** `data-governance-architecture/03-data-quality-diagnostic/`  
