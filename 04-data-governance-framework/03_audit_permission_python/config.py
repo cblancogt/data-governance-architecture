@@ -1,0 +1,4 @@
+SERVER   = r"SERVER_NAME"
+DATABASE = "DATABASE_NAME"
+OUTPUT_DIR = "."
+DRIVER = "ODBC Driver 17 for SQL Server"|

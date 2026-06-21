@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "system": "TRANSTRACK",
+    "report_type": "Permission Audit Compliance Report",
+    "generated_at": "2026-06-14 23:35:37 UTC",
+    "server": "c13\\lab_db",
+    "database": "TRANSTRACK",
+    "log_file": "audit_permissions_20260614_233537.log"
+  },
+  "summary": {
+    "total_findings_evaluated": 11,
+    "green": 0,
+    "yellow": 11,
+    "red": 0,
+    "overall_status": "YELLOW",
+    "message": "REVIEW REQUIRED: 11 finding(s) need Domain Owner review."
+  },
+  "role_membership_inventory": {
+    "rol_auditoria": [
+      {
+        "member_name": "test_auditoria",
+        "principal_type": "SQL_USER",
+        "created_date": "2026-06-14T12:12:03.173000"
+      }
+    ],
+    "rol_cliente": [
+      {
+        "member_name": "test_cliente",
+        "principal_type": "SQL_USER",
+        "created_date": "2026-06-14T12:12:03.170000"
+      }
+    ],
+    "rol_dba": [
+      {
+        "member_name": "test_dba",
+        "principal_type": "SQL_USER",
+        "created_date": "2026-06-14T12:12:03.173000"
+      }
+    ],
+    "rol_legal": [
+      {
+        "member_name": "test_legal",
+        "principal_type": "SQL_USER",
+        "created_date": "2026-06-14T12:12:03.173000"
+      }
+    ],
+    "rol_operaciones": [
+      {
+        "member_name": "test_operaciones",
+        "principal_type": "SQL_USER",
+        "created_date": "2026-06-14T12:12:03.173000"
+      }
+    ]
+  },
+  "permission_compliance_findings": [
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "CONTRATO_CLIENTE",
+      "classification": "FINANCIAL_CRITICAL",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "FACTURA",
+      "classification": "FINANCIAL_CRITICAL",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "INCIDENTE",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "PEDIDO",
+      "classification": "FINANCIAL_CRITICAL",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "VEHICULO",
+      "classification": "FINANCIAL_CRITICAL",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "CLIENTE",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "CONDUCTOR",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "EMPLEADO",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "ENTREGA",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "OPERADOR",
+      "classification": "PII",
+      "status": "YELLOW"
+    },
+    {
+      "user": "N/A",
+      "role": "N/A",
+      "permission": "NO GRANT FOUND",
+      "state": "N/A",
+      "table": "TELEMETRIA_GPS",
+      "classification": "PII",
+      "status": "YELLOW"
+    }
+  ],
+  "data_classification_inventory": [
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "fecha_inicio",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Contract Start Date",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "fecha_fin",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Contract End Date",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "tarifa_base",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Base Tariff",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "tarifa_km_adicional",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Additional KM Tariff",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "descuento_pct",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Discount Percentage",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONTRATO_CLIENTE",
+      "column_name": "condiciones_pago",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Payment Terms",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "numero_factura",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Invoice Number",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "fecha_emision",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Issue Date",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "monto_subtotal",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Subtotal Amount",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "monto_impuesto",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Tax Amount",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "monto_total",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Total Invoice Amount",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "FACTURA",
+      "column_name": "estado_factura",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Invoice Status",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "INCIDENTE",
+      "column_name": "monto_dano",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Damage Amount",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "PEDIDO",
+      "column_name": "valor_carga",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Cargo Declared Value",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "VEHICULO",
+      "column_name": "fecha_adquisicion",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Acquisition Date",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "VEHICULO",
+      "column_name": "valor_adquisicion",
+      "classification_level": "FINANCIAL_CRITICAL",
+      "information_type": "Acquisition Value",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CLIENTE",
+      "column_name": "nit",
+      "classification_level": "PII",
+      "information_type": "Tax Identification Number",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CLIENTE",
+      "column_name": "nombre_cliente",
+      "classification_level": "PII",
+      "information_type": "Full Name / Company Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CLIENTE",
+      "column_name": "email",
+      "classification_level": "PII",
+      "information_type": "Email Address",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CLIENTE",
+      "column_name": "telefono",
+      "classification_level": "PII",
+      "information_type": "Phone Number",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CLIENTE",
+      "column_name": "direccion",
+      "classification_level": "PII",
+      "information_type": "Physical Address",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "numero_licencia",
+      "classification_level": "PII",
+      "information_type": "Driver License Number",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "dpi",
+      "classification_level": "PII",
+      "information_type": "National ID (DPI)",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "nombre",
+      "classification_level": "PII",
+      "information_type": "Full Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "apellido",
+      "classification_level": "PII",
+      "information_type": "Last Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "fecha_nacimiento",
+      "classification_level": "PII",
+      "information_type": "Date of Birth",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "CONDUCTOR",
+      "column_name": "telefono",
+      "classification_level": "PII",
+      "information_type": "Phone Number",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "EMPLEADO",
+      "column_name": "codigo_empleado",
+      "classification_level": "PII",
+      "information_type": "Employee Code",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "EMPLEADO",
+      "column_name": "nombre_completo",
+      "classification_level": "PII",
+      "information_type": "Full Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "EMPLEADO",
+      "column_name": "dpi",
+      "classification_level": "PII",
+      "information_type": "National ID (DPI)",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "EMPLEADO",
+      "column_name": "salario_base",
+      "classification_level": "PII",
+      "information_type": "Base Salary",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "ENTREGA",
+      "column_name": "firma_receptor",
+      "classification_level": "PII",
+      "information_type": "Recipient Signature",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "ENTREGA",
+      "column_name": "nombre_receptor",
+      "classification_level": "PII",
+      "information_type": "Recipient Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "INCIDENTE",
+      "column_name": "conductor_id",
+      "classification_level": "PII",
+      "information_type": "FK to Driver",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "INCIDENTE",
+      "column_name": "reportado_por",
+      "classification_level": "PII",
+      "information_type": "Reported By",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "OPERADOR",
+      "column_name": "nombre_operador",
+      "classification_level": "PII",
+      "information_type": "Operator Name",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "TELEMETRIA_GPS",
+      "column_name": "conductor_id",
+      "classification_level": "PII",
+      "information_type": "FK to Driver",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "TELEMETRIA_GPS",
+      "column_name": "latitud",
+      "classification_level": "PII",
+      "information_type": "GPS Latitude",
+      "requires_audit_log": true
+    },
+    {
+      "table_name": "TELEMETRIA_GPS",
+      "column_name": "longitud",
+      "classification_level": "PII",
+      "information_type": "GPS Longitude",
+      "requires_audit_log": true
+    }
+  ],
+  "recommendations": [
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on CONTRATO_CLIENTE for role N/A.",
+      "table": "CONTRATO_CLIENTE",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "FINANCIAL_CRITICAL"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on FACTURA for role N/A.",
+      "table": "FACTURA",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "FINANCIAL_CRITICAL"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on INCIDENTE for role N/A.",
+      "table": "INCIDENTE",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on PEDIDO for role N/A.",
+      "table": "PEDIDO",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "FINANCIAL_CRITICAL"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on VEHICULO for role N/A.",
+      "table": "VEHICULO",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "FINANCIAL_CRITICAL"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on CLIENTE for role N/A.",
+      "table": "CLIENTE",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on CONDUCTOR for role N/A.",
+      "table": "CONDUCTOR",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on EMPLEADO for role N/A.",
+      "table": "EMPLEADO",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on ENTREGA for role N/A.",
+      "table": "ENTREGA",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on OPERADOR for role N/A.",
+      "table": "OPERADOR",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    },
+    {
+      "severity": "YELLOW",
+      "action": "REVIEW_PERMISSION",
+      "message": "Review NO GRANT FOUND on TELEMETRIA_GPS for role N/A.",
+      "table": "TELEMETRIA_GPS",
+      "role": "N/A",
+      "user": "N/A",
+      "classification": "PII"
+    }
+  ]
+}
